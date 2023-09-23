@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path("Direccion/ archivo al cual queremos acceder")
     path("login/",include("login.urls")),
 ]
