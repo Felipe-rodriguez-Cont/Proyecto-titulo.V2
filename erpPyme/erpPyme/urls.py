@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from login import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path("Direccion/ archivo al cual queremos acceder")
-    path('',views.index),
+    path('signup',views.index, name='signup'),
+    path('',views.login, name='login'),
 ]
