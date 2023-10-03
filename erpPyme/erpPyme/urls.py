@@ -25,4 +25,3 @@ urlpatterns = [
     path('signup',views.index, name='signup'),
     path('',views.login, name='login'),
 ]
-s
