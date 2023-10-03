@@ -6,6 +6,8 @@
 	<title>Login</title>
 	{% load static %}
 	<link rel="stylesheet" type="text/css" href="{% static 'css/login/login.css' %}">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 	<form>
@@ -121,16 +123,27 @@
 			<p class="helper helper1">email@domain.com</p>
 		</div>
 		<div class="inputGroup inputGroup2">
-			<label for="loginPassword" id="loginPasswordLabel">Password</label>
+			<label for="loginPassword" id="loginPasswordLabel">Contraseña</label>
 			<input type="password" id="loginPassword" />
-			<label id="showPasswordToggle" for="showPasswordCheck">Show
+			<label id="showPasswordToggle" for="showPasswordCheck">Mostrar
 				<input id="showPasswordCheck" type="checkbox"/>
 				<div class="indicator"></div>
 			</label>
 		</div>
 		<div class="inputGroup inputGroup3">
 			<button id="login">Log in</button>
-		</div>	
+		</div>
+		
+		<form id="miFormulario" class="positioned-form" >
+			<!-- Otros elementos del formulario -->
+			<div class="recuperar">
+			  <a id="recuperarPass" href="#">Recuperar contraseña</a>
+			</div>
+			<div class="registrar">
+			  <a id="register" href="#">Registrarse</a>
+			</div>
+		  </form>
+		  
 	</form>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 	<script src="{% static 'js/login/login.js' %}"></script>

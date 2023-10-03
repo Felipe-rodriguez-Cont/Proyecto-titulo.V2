@@ -201,4 +201,34 @@ form .inputGroup2 #showPasswordToggle input:disabled ~ .indicator:after {
   visibility: hidden;
 }
 
-/*# sourceMappingURL=login.css.map */
+.positioned-form {
+  position: absolute;
+  
+  /* Ajusta estos valores según tus necesidades */
+  bottom: auto;
+  left: auto;
+}
+
+#register {
+  /* Asegura que el elemento #register esté dentro de su contenedor (#miFormulario) */
+  position: absolute;
+  text-decoration: none;
+  font-size: 20px;
+  color: #217093;
+  font-weight: bold;
+  bottom: 20 px;
+  left: 15px;
+  
+}
+
+#recuperarPass {
+  /* Asegura que el elemento #recuperarPass esté dentro de su contenedor (#miFormulario) */
+  position: absolute;
+  text-decoration: none;
+  font-size: 20px;
+  color: #217093;
+  font-weight: bold;
+  bottom: 20 px;
+  right: 15px ;
+}
+
