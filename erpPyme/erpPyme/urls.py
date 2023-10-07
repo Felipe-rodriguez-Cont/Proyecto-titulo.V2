@@ -22,6 +22,8 @@ from login import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path("Direccion/ archivo al cual queremos acceder")
-    path('signup',views.index, name='signup'),
+    path('signup/',views.index, name='signup'),
     path('',views.login, name='login'),
+    path('home/',views.home, name='home'),
+    
 ]
