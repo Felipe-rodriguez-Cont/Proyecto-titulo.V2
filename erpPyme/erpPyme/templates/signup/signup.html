@@ -6,7 +6,8 @@
     <title>Registrarse</title>
 </head>
 <body>
-    <h1>prueba para registrarse</h1>
+    <h1>REGISTRARSE</h1>
+    {{error}}
     <form action="/signup/" method="post">
         {% csrf_token %}
         {{form.as_p}}
