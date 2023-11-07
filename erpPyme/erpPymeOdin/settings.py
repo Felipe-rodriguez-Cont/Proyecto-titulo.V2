@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'login',
     'erp',
-    'erpPyme'
+    'erpPymeOdin'
 ]
 
 MIDDLEWARE = [
@@ -52,12 +52,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'erpPyme.urls'
+ROOT_URLCONF = 'erpPymeOdin.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'erpPyme/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'erpPymeOdin/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'erpPyme.wsgi.application'
+WSGI_APPLICATION = 'erpPymeOdin.wsgi.application'
 
 
 # Database
@@ -126,7 +126,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'erpPyme/static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'erpPymeOdin/static')]
 
 
 # Default primary key field type

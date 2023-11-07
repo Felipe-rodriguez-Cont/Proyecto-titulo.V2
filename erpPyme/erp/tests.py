@@ -1,4 +1,4 @@
-from erpPyme.wsgi import *
+from erpPymeOdin.wsgi import *
 from erp.models import Type
 
 # Create your tests here.
