@@ -1,0 +1,31 @@
+    <div>
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/home">INICIO</a>
+            </li>
+            <li>
+                <a href="/task">TAREAS</a>
+            </li>
+            
+            {% if user.is_authenticated %}
+            <li>
+                <a href="/logout">Cerrar sesion</a>
+            </li>
+            {% else%}
+            <li>
+                <a href="/">Inicio sesion</a>
+            </li>
+            <li>
+                <a href="/signup">REGISTRARSE</a>
+            </li>
+            {% endif %}
+            
+            
+        </ul>
+    </nav>
+</div>
+    {% block content %}
+    
+    {% endblock %}
