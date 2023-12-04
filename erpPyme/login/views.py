@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.contrib.auth import login, logout, authenticate
+from .forms import TaskForm
 
 # registrarse
 def index(request):
@@ -49,6 +50,18 @@ def home(request):
 
 def task(request):
     return render(request, 'tasks/tasks.html')
+
+def create_task(request):
+    if request.method == 'GET':
+        return render(request, 'create_task/create_task.html',{
+        'form': TaskForm
+        })
+    else:
+        form =  TaskForm(request.POST)
+        return render(request, 'create_task/create_task.html',{
+        'form': TaskForm
+        })   
+    
 
 def signout(request):
     logout (request) 
