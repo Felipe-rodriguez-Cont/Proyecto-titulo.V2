@@ -62,7 +62,6 @@ def create_task(request):
         'form': TaskForm
         })   
     
-
 def signout(request):
     logout (request) 
     return redirect('home')

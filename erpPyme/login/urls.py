@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
+
+from erp.views import pruebaPagina
 
 urlpatterns = [
-    #path("", views.index, name= "indexLogin"),
+    #path('prueba', pruebaPagina, name= "prueba"),
 ]
