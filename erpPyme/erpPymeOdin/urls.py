@@ -16,7 +16,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from erp.views import pruebaPagina
 from login import views
 
 
@@ -29,6 +28,7 @@ urlpatterns = [
     path('task/', views.task, name='task'),
     path('logout/', views.signout, name='logout'),
     path('create_task/', views.create_task, name='create_task'),
-    path('erp/', include('erp.urls')),
+    path('ventas/', include('ventas.urls')),
+    path('clientes/', include('clientes.urls')),
     
 ]
