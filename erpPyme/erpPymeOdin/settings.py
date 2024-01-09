@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'login',
-    'clientes',
     'ventas',
-    'erpPymeOdin'
+    'erpPymeOdin',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [

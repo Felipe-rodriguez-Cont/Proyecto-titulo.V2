@@ -29,6 +29,6 @@ urlpatterns = [
     path('logout/', views.signout, name='logout'),
     path('create_task/', views.create_task, name='create_task'),
     path('ventas/', include('ventas.urls')),
-    path('clientes/', include('clientes.urls')),
+    #path('clientes/', include('clientes.urls')),
     
 ]
