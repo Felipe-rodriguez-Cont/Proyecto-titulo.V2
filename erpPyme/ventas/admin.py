@@ -1,5 +1,5 @@
 from django.contrib import admin
-from ventas.models import Cliente,producto
+from ventas.models import Cliente,Producto
 
 # Register your models here.
 class clienteAdmin(admin.ModelAdmin):
@@ -18,6 +18,6 @@ class productoAdmin(admin.ModelAdmin):
     list_filter=()
     fieldsets=()
 
-admin.site.register (producto,productoAdmin)
+admin.site.register (Producto,productoAdmin)
     
 

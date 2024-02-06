@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'ventas',
     'erpPymeOdin',
     'widget_tweaks',
+    'django.contrib.humanize',    
+    
 ]
 
 MIDDLEWARE = [
@@ -53,6 +55,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 ROOT_URLCONF = 'erpPymeOdin.urls'
 
 TEMPLATES = [
